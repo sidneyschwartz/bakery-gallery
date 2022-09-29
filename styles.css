@@ -1,5 +1,4 @@
 #cs1300-gallery {
-  background-color: lightblue;
 }
 
 /* Uncomment below if images are way too big.
@@ -11,4 +10,34 @@ Selects all image tags and makes them 500px;
 
 .gallery-container {
   /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-around;
+  height: 100%;
 }
+
+body {
+  background-image: url("assets/bg2.jpeg");
+  background-repeat: repeat;
+  background-size: 50vw;
+  background-color: black;
+}
+
+.gallery-item {
+  max-width: 100%;
+  height: 500px;
+}
+
+.gallery-item:hover {
+  opacity: 0%;
+  transition: 1s;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
